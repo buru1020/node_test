@@ -1,8 +1,8 @@
-setTimeout(function() {
-  console.log("...");
+setInterval(function() {
+      console.log("hello");
 }, 500);
 process.addListener("SIGINT", function() {
-  console.log("BYE!!");
-  process.exit(0);
+      console.log("\r\ngood-bye");
+        process.exit(0);
 });
-console.log("START!!");
+console.log('START!!');

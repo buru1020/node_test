@@ -1,0 +1,6 @@
+var http = require("http");
+http.createServer(function(req, res) {
+      res.writeHead(200, {"Content-Type": "application/json; charset=utf-8"});
+        res.write(JSON.stringify({ title: 'Hello Node-!', content: '나는 노드를 보았노라.'}));
+          res.end();
+}).listen(8000);
